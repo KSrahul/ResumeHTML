@@ -1,335 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <style>
 
-        .resumeContainer {
-            max-width: 900px;
+<head>
+    <meta charset="UTF-8" />
+    <title>Rahul Alam – Resume</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 28px 0;
+            background: #111;
+            font-family: "Roboto", sans-serif;
+            color: #222;
+        }
+
+        .page {
+            width: 1000px;
             margin: auto;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            border: 40px solid #9dc7d8;
+            background: #fff;
+            padding: 22px 22px;
+            border-radius: 6px;
+            border: 30px solid #f7f7f7;
         }
-        
-        .name {
-            color: #2B292C;
-            font-size: 38px;
-            font-weight: 300;
-            letter-spacing: 2px;
-        }
-        .resumeHeader {
-            background-color: #DBDBDD;
-            padding: 40px 0px;
+
+        /* Header */
+        .header {
             text-align: center;
+            margin-bottom: 26px;
         }
-        .profileName {
-            font-weight: 400;
-            font-size: 24px;
-            margin-top: 4px;
-            letter-spacing: 1px;
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 600;
         }
-        .resume_body {
-            /* background-color: #E8E6E9; */
-            background-color: #f3f3f3;
-            padding-top: 20px;
-            padding-bottom: 40px;
-            padding-left: 20px;
-            padding-right: 10px;
-            display: flex;
+
+        .meta {
+            margin-top: 6px;
+            font-size: 13px;
+            color: #444;
         }
-        .resume_body_heading {
-            font-size: 22px;
-            font-weight: 300;
-            border-bottom: 2px solid #c7c7c7;
-            padding-left: 10px;
-            margin-bottom: 10px;
+
+        section {
+            margin-bottom: 26px;
         }
-        .resume_left {
-            width: 32%;
-            border-right: 2px solid #c7c7c7;
-            padding-right: 20px;
-        }
-        .resume_right{
-            width: 68%;
-            padding-left: 20px;
-        }
-        .sections{
-            margin-bottom: 30px;
-        }
-        .left_space {
-            padding-left: 10px;
-        }
-        .job_position_name {
-            font-weight: bold;
-            font-size: 15px;
-            text-transform: uppercase;
-        }
-        .job_position_section {
-            padding-bottom: 30px;
-        }
-        .contact_boxes {
-            padding-bottom: 17px;
-        }
-        .contact_details {
-            padding-left: 10px;
-        }
-        .flex{
-            display: flex;
-        }
-        .contact_link {
-            padding-left: 10px;
-        }
-        .left_resume_content {
-            padding-bottom: 30px;
-        }
-        .contact_first{
-            padding-top: 10px;
-        }
-        .education_sections {
-            padding-bottom: 20px;
-        }
-        .college_name {
-            font-weight: bold;
-            font-size: 15px;
-        }
-        .skills_list {
-            padding-left: 16px;
-            list-style-type: square;
-        }
-        .skills_list > li {
-            padding-bottom: 4px;
-        }
-        .company_designation {
-            font-weight: bold;
-            padding-top: 6px;
-        }
-        .company_task {
-            padding-left: 2px;
-            padding-top: 2px;
-            margin-bottom: 0px;
-            list-style-type: none;
-        }
-        ul.company_task > li {
-            padding-bottom: 4px;
-        }
-        .intern_heading{
-            padding-top: 6px;
-        }
-        .resume_start_body{
-            box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
-        }
-        .jobs_left{
-            border-bottom: 1px solid gainsboro;
-        }
-        .personalprojects {
+
+        h2 {
             font-size: 16px;
-            font-weight: bold;
-        }
-        .interests_main {
-            border-top: 1px solid gainsboro;
-            margin-top: 30px;
-            padding-top: 14px;
-        }
-        .intersets_text {
-            font-size: 20px;
-            letter-spacing: 2px;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-bottom: 1px solid #333;
             padding-bottom: 4px;
+            margin-bottom: 10px;
+            letter-spacing: 0.4px;
         }
-        .intersets_name {
-            padding-bottom: 2px;
+
+        p {
+            font-size: 14px;
+            line-height: 1.45;
+            margin: 6px 0;
+            color: #3c3a3a;
+            font-weight: 400;
         }
-        .course_name {
-            padding: 2px 0px;
+
+        /* Experience (unchanged styles) */
+        .role {
+            margin-bottom: 20px;
+        }
+
+        .role-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 6px;
+        }
+
+        .company-name {
+            font-size: 14px;
+            font-weight: 500;
+            color: #111;
+        }
+
+        .role-title {
+            font-size: 13.5px;
+            color: #1d1d1d;
+            margin-top: 2px;
+        }
+
+        .role-header span {
+            font-size: 13px;
+            color: #666;
+            white-space: nowrap;
+        }
+
+        ul {
+            margin: 6px 0 0 18px;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        ul li {
+            margin-bottom: 4px;
+            line-height: 1.45;
+            color: #3c3a3a;
+            font-weight: 400;
+        }
+
+        ul li::marker {
+            color: #4ac7fa;
+        }
+
+        /* === UPDATED SECTIONS ONLY === */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            row-gap: 6px;
+            column-gap: 12px;
+            font-size: 14px;
+        }
+
+        .edu-grid {
+            /* display: grid;
+            grid-template-columns: max-content auto;
+            column-gap: 16px;
+            row-gap: 6px; */
+        }
+
+        /* Projects */
+        .project-row {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        a {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+
+            .page {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        .headTitle {
+            border-bottom: 1px solid;
+            width: max-content;
+            margin: 6px auto 0px auto;
+            color: #3c3a3a;
+        }
+
+        section p {
+            max-width: 100%;
+            margin: 4px 0;
         }
     </style>
+
 </head>
+
 <body>
-    <div class="resumeContainer">
-        <div class="resume_start_body">
-            <div class="resumeHeader">
-                <div class="name">RAHUL ALAM</div>
-                <div class="profileName">UI Developer</div>
-            </div>
-            <div class="resume_body">
-                <div class="resume_left">
-                    <div class="left_resume_content">
-                        <div class="resume_body_heading">CONTACT</div>
-                        <div class="contact_details contact_first">
-                            <div class="contact_boxes flex">
-                                <div class="flex">
-                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 384 384" width="16" style="enable-background:new 0 0 384 384;" xml:space="preserve">
-                                        <g>
-                                            <g>
-                                                <path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594
-                                                    c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448
-                                                    c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813
-                                                    C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z"
-                                                    />
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="contact_link">9873364404</div>
-                            </div>
-                            <div class="contact_boxes flex">
-                                <div class="flex">
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 512 512" width="20" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                        <g>
-                                            <g>
-                                                <g>
-                                                    <path d="M10.688,95.156C80.958,154.667,204.26,259.365,240.5,292.01c4.865,4.406,10.083,6.646,15.5,6.646
-                                                        c5.406,0,10.615-2.219,15.469-6.604c36.271-32.677,159.573-137.385,229.844-196.896c4.375-3.698,5.042-10.198,1.5-14.719
-                                                        C494.625,69.99,482.417,64,469.333,64H42.667c-13.083,0-25.292,5.99-33.479,16.438C5.646,84.958,6.313,91.458,10.688,95.156z"/>
-                                                    <path d="M505.813,127.406c-3.781-1.76-8.229-1.146-11.375,1.542C416.51,195.01,317.052,279.688,285.76,307.885
-                                                        c-17.563,15.854-41.938,15.854-59.542-0.021c-33.354-30.052-145.042-125-208.656-178.917c-3.167-2.688-7.625-3.281-11.375-1.542
-                                                        C2.417,129.156,0,132.927,0,137.083v268.25C0,428.865,19.135,448,42.667,448h426.667C492.865,448,512,428.865,512,405.333
-                                                        v-268.25C512,132.927,509.583,129.146,505.813,127.406z"/>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="contact_link">rahul.alam9873@gmail.com</div>
-                            </div>
-                            <div class="contact_boxes flex">
-                                <div class="flex">
-                                    <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="m12 0c-4.962 0-9 4.066-9 9.065 0 7.103 8.154 14.437 8.501 14.745.143.127.321.19.499.19s.356-.063.499-.189c.347-.309 8.501-7.643 8.501-14.746 0-4.999-4.038-9.065-9-9.065zm0 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"/>
-                                    </svg>
-                                </div>
-                                <div class="contact_link">Sector-49, Gurugram, Haryana</div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="left_resume_content">
-                        <div class="resume_body_heading">EDUCATION</div>
-                        <div class="contact_details">
-                            <div class="education_sections">
-                                <div class="college_name">M.K.U University</div>
-                                <div class="course_name">B.C.A (Distance), Final year</div>
-                                <div class="course_duration">2017-2020, Present</div>
-                            </div>
-                            <div class="education_sections">
-                                <div class="college_name">M.K.U University</div>
-                                <div class="course_name">12th (Distance)</div>
-                                <div class="course_duration">2015-2016</div>
-                            </div>
-                            <div class="education_sections">
-                                <div class="college_name">M.K.U University</div>
-                                <div class="course_name">10th (Distance)</div>
-                                <div class="course_duration">2013-2014</div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="left_resume_content">
-                        <div class="resume_body_heading">EXPERTISE</div>
-                        <div class="contact_details">
-                            <ul class="skills_list">
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>SCSS</li>
-                                <li>GIT</li>
-                                <li>Javascript</li>
-                                <li>Jquery</li>
-                                <li>Ajax</li>
-                                <li>Bootstrap</li>
-                                <li>Laravel (Basic)</li>
-                                <li>WordPress (Content Publishing)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="resume_right">
-                    <div class="sections">
-                        <div class="resume_body_heading">PROFILE</div>
-                        <div class="left_space">
-                            Highly motivated and 3.7 years experienced UI developer. I like to complete my task on time and with perfection. I am always interested to develop a Website Responsive. I am looking forward to working for a company with a motivating environment and great job opportunities. I always like to be in the driver's seat of any project/task
-                        </div>
-                    </div>
-    
-                    <div class="sections">
-                        <div class="resume_body_heading">WORK EXPERIENCE</div>
-                        <div class="left_space jobs_left">
-                            <div class="job_position_section">
-                                <div class="job_position_name">EazyDiner Private Limited</div>
-                                <div class="company_name">Oct 21st 2019 - Present</div>
-                                <div class="company_address">Gurugram/Haryana</div>
-                                <div class="company_designation">Front End Developer</div>
-                                <div class="company_description">
-                                    <ul class="company_task">
-                                        <li>- Developing UI/UX designs into actual code with the responsive view.</li>
-                                        <li>- Works closely with the UI/UX designers to ensure the technical feasibility of the designs before it comes to development.</li>
-                                        <li>- API integration into PHP environment with Laravel Platform.</li>
-                                        <li>- Collaborate with back-end developers and product teams to improve usability.</li>
-                                        <li>- Version control with Git and GitLab.</li>
-                                    </ul>
-                                </div>
-                            </div>
-    
-                            <div class="job_position_section">
-                                <div class="job_position_name">Ampersand Design</div>
-                                <div class="company_name">Oct 2nd, 2017 - Sep 30th, 2019</div>
-                                <div class="company_address">Gurugram/Haryana</div>
-                                <div class="company_designation">UI Developer</div>
-                                <div class="task_desc">Worked as a UI developer. As a UI developer, I am always responsible for any project to develop a Website Responsive. Worked closely with the design team to understand the Visual Designs and discussion the interaction of the website for every project.</div>
-                                <div class="company_designation">Projects worked on:</div>
-                                <div class="company_description">
-                                    <ul class="company_task">
-                                        <li>- https://www.rjcorp.in/</li>
-                                        <li>- https://ksrahul.github.io/SM/</li>
-                                        <li>- https://ksrahul.github.io/More_Project_Links/</li>
-                                    </ul>
-                                </div>
-                            </div>
-    
-                            <div class="job_position_section">
-                                <div class="job_position_name">Ampersand Design</div>
-                                <div class="company_name">May 16th, 2016 - Oct 2nd, 2017</div>
-                                <div class="company_address">Gurugram/Haryana</div>
-                                <div class="company_designation">Engineering trainee/intern</div>
-                                <div class="intern_heading">Worked on multiple projects for the company, task completed is mentioned below</div>
-                                <div class="company_description">
-                                    <ul class="company_task">
-                                        <li>- Web Development</li>
-                                        <li>- Responsive Website</li>
-                                        <li>- WordPress (Content Publishing)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="page">
 
-                    
-                    <div class="personalprojects">Personal Projects:</div>
-                    <div class="company_description">
-                        <ul class="company_task">
-                            <li>- https://ksrahul.github.io/Custom_SelectBox_Dowpdown/</li>
-                            <li>- https://ksrahul.github.io/Multiple_file_upload/</li>
-                            <li>- https://ksrahul.github.io/More_Personal_Projects/</li>
-                        </ul>
-                    </div>
-
-                    <div class="interests_main">                       
-                        <div class="intersets_text">Interests</div>
-                        <div class="intersets_list">
-                            <div class="intersets_name">- Playing Carrom board</div>
-                            <div class="intersets_name">- Playing Badminton</div>
-                            <div class="intersets_name">- Comedy TV Shows</div>
-                            <div class="intersets_name">- Music</div>
-                        </div>
-                    </div>
-                </div>
+        <header class="header">
+            <h1>Rahul Alam</h1>
+            <div class="meta">
+                rahul.alam9873@gmail.com · +91-9873364404 · linkedin.com/in/rahulalam
             </div>
-        </div>
+            <div class="headTitle">UI/UX, Frontend Developer</div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>
+                Experienced in frontend and UI/UX development with 8+ years of experience, building responsive web
+                applications using React and Next.js (v15), with proven expertise in migrating and revamping large-scale
+                web products using headless architecture and REST APIs to deliver scalable, high-performance user
+                experiences.
+            </p>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+
+            <!-- SNAPDEAL (UNCHANGED CONTENT) -->
+            <div class="role">
+                <div class="role-header">
+                    <div>
+                        <div class="company-name">Snapdeal (AceVector Group) · Gurgaon, India</div>
+                        <div class="role-title">UI Engineer</div>
+                    </div>
+                    <span>Sep 2025 – Present</span>
+                </div>
+                <ul>
+                    <li>Leading the AdTech platform, handling UI/UX, frontend development, and deployments.</li>
+                    <li>Independently spearheaded the complete redevelopment of the AdTech frontend, migrated it from a
+                        legacy monolithic Ember.js/jQuery/Java system to React & Next.js (v15) with SSR/CSR, and
+                        successfully deploying it to production.
+                        <b>resulting
+                            in a standalone, headless architecture using REST APIs.</b>
+                    </li>
+                    <li>Improved Core Web Vitals from <b> ~32% to 90%+</b> (Lighthouse), resulting in smoother usage and
+                        higher
+                        adoption by our sellers and business teams.</li>
+                    <li>Built features for sellers to advertise products on the App and Website by creating ad campaigns
+                        and tracking performance metrics (Clicks, Impressions, Conversions, Sales, Spend, ROI) charts
+                        <b> using Recharts, and integrated Payments (Razorpay)</b>
+                    </li>
+                    <li>Designed and built custom, <b>reusable components</b> such as Popups, Tabs, Accordions, File
+                        Uploads,
+                        and Select Boxes, reducing dependency on external libraries and more control over the
+                        codebase.</li>
+                    <li>Managed deployments across Staging, Pre-Production, and Production using Jenkins</li>
+                    <li>Work closely with UI/UX Designers, Product, Backend, and Business teams.</li>
+                </ul>
+            </div>
+
+            <!-- EAZYDINER (UNCHANGED CONTENT) -->
+            <div class="role">
+                <div class="role-header">
+                    <div>
+                        <div class="company-name">EazyDiner · Gurgaon, India</div>
+                        <div class="role-title">Frontend Developer</div>
+                    </div>
+                    <span>Oct 2019 – Sep 2025</span>
+                </div>
+                <ul>
+                    <li>Led eazydiner.com and built a white-label quick table booking solution for Axis Bank and
+                        IndusInd Bank across website and mobile site (mSite).</li>
+                    <li>Independently migrated the frontend from a monolithic PHP/Laravel/jQuery system to React &
+                        Next.js (v12) using
+                        SSR/SSG/CSR, building a standalone, headless frontend with REST APIs.</li>
+                    <li>Improved SEO and security <b>(Schema, Meta tags, HSTS, CSP)</b>, increasing Core Web Vitals from
+                        <b>~21%
+                            to 65%+ on Google PageSpeed.</b>
+                    </li>
+                    <li>SEO and performance improvements boosted search visibility and <b>increased website bookings
+                            by
+                            45%+.</b>
+                    </li>
+                    <li>Created, custom and reuseable component, like, Popup, Tabs, Accordion, SelectBox, to reduce the
+                        dependency of external library</li>
+                    <li>Integrated payment gateways (JusPay – India, Telr – Dubai) and analytics tools (WebEngage,
+                        Google Tag Manager, Microsoft Clarity) to track user behavior and drive product improvements.
+                    </li>
+                    <li>Worked closely with Product, UI/UX Designers, Backend, Marketing, and SEO teams across
+                        requirements,
+                        UI design, and frontend development.</li>
+                </ul>
+            </div>
+
+            <div class="role">
+                <div class="role-header">
+                    <div>
+                        <div class="company-name">Ampersand Design · Gurgaon, India</div>
+                        <div class="role-title">UI Developer</div>
+                    </div>
+                    <span>Oct 2017 – Sep 2019</span>
+                </div>
+                <ul>
+                    <li>I have worked as a UI developer with a primary responsibility to develop responsive websites. In
+                        this role, I closely collaborated with design teams to interpret visual designs and ensure
+                        effective website interactions for every project.</li>
+                    <li>Worked with multiple clients on various projects to develop responsive brand websites.</li>
+                    <li>Projects worked on: <a href="https://ksrahul.github.io/project_links">Link</a> </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+
+            <div class="skills-grid">
+                <div class="company-name">Frontend</div>
+                <div>HTML, CSS, SCSS, JavaScript, JQuery, React, Next.js (v15)</div>
+
+                <div class="company-name">Design</div>
+                <div>Figma, Zeplin</div>
+
+                <div class="company-name">Analytics</div>
+                <div>WebEngage, Microsoft Clarity</div>
+
+                <div class="company-name">Deployment</div>
+                <div>Jenkins, ArgoCD</div>
+
+                <div class="company-name">Version Control</div>
+                <div>Git</div>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Education</h2>
+            <div class="edu-grid">
+                <span>Bachelor of Computer Applications ·</span>
+                <span>Subharti University · 2021–2024</span>
+                <!-- <div><strong>12th</strong></div>
+                <div>Madurai Kamaraj University · 2015–2016</div>
+                <div><strong>10th</strong></div>
+                <div>Madurai Kamaraj University · 2013–2014</div> -->
+            </div>
+        </section>
+
+        <!-- <section>
+            <h2>Free Time Projects</h2>
+            <div class="project-row">
+                <div class="company-name">Frontend Practice & UI Projects</div>
+                Personal projects and UI experiments ·
+                <a href="https://ksrahul.github.io/project_links">View Projects</a>
+            </div>
+        </section> -->
+
+
     </div>
 </body>
+
 </html>
