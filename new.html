@@ -45,7 +45,7 @@
 
         .meta {
             margin-top: 6px;
-            font-size: 13px;
+            font-size: 14px;
             color: #444;
         }
 
@@ -54,7 +54,7 @@
         }
 
         h2 {
-            font-size: 19px;
+            font-size: 21px;
             font-weight: 600;
             text-transform: uppercase;
             border-bottom: 1px solid #333;
@@ -63,8 +63,8 @@
             letter-spacing: 0.4px;
         }
 
-        p {
-            font-size: 15px;
+        .summary {
+            font-size: 17px;
             line-height: 1.45;
             margin: 6px 0;
             color: #3c3a3a;
@@ -84,21 +84,23 @@
         }
 
         .company-name {
-            font-size: 17px;
+            font-size: 19px;
             font-weight: 500;
             color: #111;
         }
 
         .role-title {
             font-size: 13.5px;
-            color: #343333;
+            /* color: #343333; */
+            color: #111;
             margin-top: 2px;
-            font-size: 14px;
+            font-size: 15px;
         }
 
         .role-header span {
-            font-size: 13px;
-            color: #666;
+            font-size: 14px;
+            /* color: #666; */
+            color: #111;
             white-space: nowrap;
         }
 
@@ -113,7 +115,7 @@
             line-height: 1.45;
             color: #3c3a3a;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 17px;
         }
 
         ul li::marker {
@@ -163,7 +165,7 @@
         }
 
         .headTitle {
-            font-size: 20px;
+            font-size: 21px;
             border-bottom: 1px solid;
             width: max-content;
             margin: 6px auto 0px auto;
@@ -186,13 +188,13 @@
         </header>
         <section>
             <h2>Professional Summary</h2>
-            <p> Experienced in frontend and UI/UX development with 8+ years of experience, building responsive web
-                applications using React and Next.js (v15), with proven expertise in migrating and revamping large-scale
+            <div class="summary"> Experienced in frontend and UI/UX development with <b>8+ years</b> of experience, building responsive web
+                applications using React and Next.js-15, with proven expertise in migrating and revamping large-scale
                 web products using headless architecture and REST APIs to deliver scalable, high-performance user
-                experiences. </p>
+                experiences. </div>
         </section>
         <section>
-            <h2>Professional Experience</h2>
+            <h2>Experience</h2>
             <!-- SNAPDEAL (UNCHANGED CONTENT) -->
             <div class="role">
                 <div class="role-header">
@@ -238,7 +240,7 @@
                 </div>
                 <ul>
                     <li>Led the development of <b>eazydiner.com</b>, built <b>from scratch</b> across web and <b>mobile
-                            (mSite)</b> using React and Next.js (v12), with a strong emphasis on SEO, mobile
+                            (mSite)</b> using React and Next.js-12, with a strong emphasis on SEO, mobile
                         performance, <b>including Schema implementation, Meta optimization, page-level enhancements</b>,
                         and <b>UI rendering strategies</b>. </li>
                     <li> Owned and delivered <b>multiple platforms</b>, including <b>postcardresorts</b> for hotel
@@ -247,7 +249,7 @@
                         and <b>IndusInd Bank</b> across <b>web and mSite</b>
                         <!-- with API integrations implemented using PHP in a Laravel environment. --> </li>
                     <li><b>Independently migrated</b> and successfully deployed the frontend of the eazydiner.com from a
-                        monolithic PHP/Laravel/jQuery system to React & Next.js (v12) <b>using</b> SSR/SSG/CSR, building
+                        monolithic PHP/Laravel/jQuery system to React & Next.js-12 <b>using</b> SSR/SSG/CSR, building
                         a <b>standalone, headless frontend</b> with REST APIs. <a
                             href="https://www.eazydiner.com/">Link</a> </li>
                     <li><b>Implemented</b> SEO and security enhancements <b>(HSTS, CSP, Schema, Meta Tags)</b>, improved
@@ -293,7 +295,7 @@
             <h2>Skills</h2>
             <div class="skills-grid">
                 <div class="company-name">Frontend</div>
-                <div>HTML, CSS, SCSS, Bootstrap, JavaScript, JQuery, React, Next.js (v15)</div>
+                <div>HTML, CSS, SCSS, Bootstrap, JavaScript, JQuery, React, Next.js-15</div>
                 <div class="company-name">Design</div>
                 <div>Figma, Zeplin</div>
                 <div class="company-name">Analytics</div>
