@@ -3,13 +3,11 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Rahul Alam – Resume</title>
-
+    <title>Rahul Alam – Updated Resume</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300..700;1,300..700&display=swap"        rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300..700;1,300..700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -18,18 +16,20 @@
         body {
             margin: 0;
             padding: 28px 0;
-            background: #111;
-            font-family: "Roboto", sans-serif;
+            /* background: #111; */
+            /* font-family: "Roboto", sans-serif; */
+            font-family: "Manrope", sans-serif;
             color: #222;
         }
 
         .page {
-            width: 1040px;
-            margin: auto;
+            /* width: 1320px; */
+            margin: 0px 40px;
+            /* margin: auto; */
             background: #fff;
             padding: 22px 22px;
             border-radius: 6px;
-            border: 30px solid #f7f7f7;
+            border: 30px solid #ebeaea;
         }
 
         /* Header */
@@ -40,13 +40,13 @@
 
         .header h1 {
             margin: 0;
-            font-size: 32px;
+            font-size: 33px;
             font-weight: 600;
         }
 
         .meta {
             margin-top: 6px;
-            font-size: 13px;
+            font-size: 15px;
             color: #444;
         }
 
@@ -55,7 +55,7 @@
         }
 
         h2 {
-            font-size: 19px;
+            font-size: 22px;
             font-weight: 600;
             text-transform: uppercase;
             border-bottom: 1px solid #333;
@@ -64,8 +64,8 @@
             letter-spacing: 0.4px;
         }
 
-        p {
-            font-size: 15px;
+        .summary {
+            font-size: 18px;
             line-height: 1.45;
             margin: 6px 0;
             color: #3c3a3a;
@@ -85,21 +85,23 @@
         }
 
         .company-name {
-            font-size: 16px;
+            font-size: 20px;
             font-weight: 500;
             color: #111;
         }
 
         .role-title {
             font-size: 13.5px;
-            color: #1d1d1d;
+            /* color: #343333; */
+            color: #111;
             margin-top: 2px;
-            font-size: 14px;
+            font-size: 16px;
         }
 
         .role-header span {
-            font-size: 13px;
-            color: #666;
+            font-size: 15px;
+            /* color: #666; */
+            color: #111;
             white-space: nowrap;
         }
 
@@ -110,11 +112,11 @@
         }
 
         ul li {
-            margin-bottom: 4px;
+            margin-bottom: 8px;
             line-height: 1.45;
             color: #3c3a3a;
             font-weight: 400;
-            font-size: 15px;
+            font-size: 18px;
         }
 
         ul li::marker {
@@ -122,7 +124,6 @@
         }
 
         /* === UPDATED SECTIONS ONLY === */
-
         .skills-grid {
             display: grid;
             grid-template-columns: 180px 1fr;
@@ -160,12 +161,12 @@
             }
 
             .page {
-                /* width: 100%;
-                padding: 0; */
+                /* width: 100%;                padding: 0; */
             }
         }
 
         .headTitle {
+            font-size: 22px;
             border-bottom: 1px solid;
             width: max-content;
             margin: 6px auto 0px auto;
@@ -176,159 +177,150 @@
             max-width: 100%;
             margin: 4px 0;
         }
+        .nameSill {
+    font-size: 16px;
+}
     </style>
-
 </head>
 
 <body>
     <div class="page">
-
         <header class="header">
             <h1>Rahul Alam</h1>
-            <div class="meta">
-                rahul.alam9873@gmail.com · +91-9873364404 · linkedin.com/in/rahulalam
-            </div>
-            <div class="headTitle">UI/UX, Frontend Developer</div>
+            <div class="meta"> rahul.alam9873@gmail.com · +91-9873364404 · linkedin.com/in/rahulalam </div>
+            <div class="headTitle">Frontend Developer</div>
         </header>
-
         <section>
             <h2>Professional Summary</h2>
-            <p>
-                Experienced in frontend and UI/UX development with 8+ years of experience, building responsive web
-                applications using React and Next.js (v15), with proven expertise in migrating and revamping large-scale
-                web products using headless architecture and REST APIs to deliver scalable, high-performance user
-                experiences.
-            </p>
+            <div class="summary"> Experienced in frontend and UI/UX development with <b>8+ years</b> of experience, specializing in migrating, revamping, and modernizing large-scale web applications from scratch using React and Next.js-15 with headless architecture and REST APIs to deliver scalable, high-performance user experiences.
+              </div>
         </section>
-
         <section>
-            <h2>Professional Experience</h2>
-
+            <h2>Experience</h2>
             <!-- SNAPDEAL (UNCHANGED CONTENT) -->
             <div class="role">
                 <div class="role-header">
                     <div>
                         <div class="company-name">Snapdeal (AceVector Group) · Gurgaon, India</div>
                         <div class="role-title">UI Engineer</div>
-                    </div>
-                    <span>Sep 2025 – Present</span>
+                    </div> <span>Sep 2025 – Present</span>
                 </div>
                 <ul>
-                    <li>Leading the AdTech platform, handling UI/UX, frontend development, and deployments.</li>
-                    <li>Independently spearheaded the complete redevelopment of the AdTech frontend, migrated it from a
-                        legacy monolithic Ember.js/jQuery/Java system to React with Next.js (v15) and TypeScript using SSR/CSR, and
-                        successfully deplyed it to production.
-                        <b>resulting
-                            in a standalone, headless architecture using REST APIs.</b>
-                    </li>
-                    <li>Improved Core Web Vitals from <b> ~32% to 90%+</b> (Lighthouse), resulting in smoother usage and
-                        higher
-                        adoption by our sellers and business teams. <a href="https://ksrahul.github.io/project_links/scoreAdTech.jpeg">Link</a></li>
-                    <li>Built features for sellers to advertise products on the App and Website by creating ad campaigns
-                        and tracking performance metrics (Clicks, Impressions, Conversions, Sales, Spend, ROI) charts
-                        <b> using Recharts, and integrated Payments (Razorpay)</b>
-                    </li>
-                    <li>Designed and built custom, <b>reusable components</b> (Popups, Tabs, Accordions, File Uploads, Select Boxes, etc..), reducing dependency on external libraries, and more control over the
-                        codebase, and <b> managing deployments across Staging, Pre-Production, and Production using Jenkins</b></li>
+                    <li>Lead the <b>AdTech</b> platform, handling UI/UX, frontend development, and production
+                        deployments. </li>
+                    <li><b>Independently</b> spearheaded the complete frontend redevelopment, <b>migrated</b> from a
+                        monolithic architecture (Ember.js / jQuery / Java system) to React, Next.js-15, and TypeScript, using <b>RSC (Server Component), SSR,
+                            CSR, and SSG</b>, and <b>successfully</b> deployed it on production resulting in a
+                        <b>standalone headless architecture</b> with REST APIs. </li>
+                    <li><b>Improved</b> Core Web Vitals from <b> ~32% to 90%+</b> (Lighthouse, <a
+                            href="https://ksrahul.github.io/project_links/scoreAdTech.jpeg">Link</a>), driving smoother
+                        usage and <b>higher adoption</b> by sellers and business teams. </li>
+                    <li>Built seller-facing features to create ad campaigns and track performance metrics (Clicks,
+                        Impressions, Conversions, Sales, Spend, ROI) <b>using Recharts</b>, and integrated
+                        <b>Razorpay</b> for payments. </li>
+                    <li>Designed and built custom, <b>reusable UI components</b> (Popups, Tabs, Accordions, File
+                        Uploads, Select Boxes, etc..), <b>reducing dependency on external libraries</b>, and more
+                        control over the codebase, and <b>managing deployments</b> across <b>Staging</b>,
+                        <b>Pre-Production</b>, and <b>Production</b> using Jenkins</b> </li>
                     <!-- <li>Work closely with UI/UX Designers, Product, Backend, and Business teams.  -->
-                        <li>Worked closely with <b> UI/UX designers</b> to translate visual designs into code, drove discussions with <b>Product teams</b> on business and product requirements, integrated APIs with <b>Backend teams</b>. And worked directly with <b>Business teams</b> to understand seller pain points and improve product usability.
-                        </li>
-                        <!-- | Project <a href="https://ksrahul.github.io/project_links/ampersand.html">Link</a> -->
-                    </li>
+                    <li>Work closely with <b>UI/UX designers</b> to translate design-to-code with <b>pixel perfect
+                            execution</b> and <b>production-ready</b> interfaces, aligned with <b>Product teams</b> on
+                        feature requirements, integrated services with <b>Backend teams</b>, and partnered with
+                        <b>Business leadership</b> and the <b>CPTO</b> to resolve seller pain points and improve overall
+                        usability. </li>
+                    <!-- | Project <a href="https://ksrahul.github.io/project_links/ampersand.html">Link</a> -->
+                    <!-- </li> -->
                 </ul>
             </div>
-
             <!-- EAZYDINER (UNCHANGED CONTENT) -->
             <div class="role">
                 <div class="role-header">
                     <div>
                         <div class="company-name">EazyDiner · Gurgaon, India</div>
                         <div class="role-title">Frontend Developer</div>
-                    </div>
-                    <span>Oct 2019 – Sep 2025</span>
+                    </div> <span>Oct 2019 – Sep 2025</span>
                 </div>
                 <ul>
-                    <li>Primarily led the development of <b>eazydiner.com across web and mobile (mSite)</b> with a strong focus on <b>SEO and mSite</b>, and also worked on <b>postcardresorts.com</b> and a quick dining booking platform for <b>Axis Bank and IndusInd Bank as secondary projects</b>.
-                    </li>
-                    <li>Independently migrated the eazydiner frontend from a monolithic PHP/Laravel/jQuery system to
-                        React &
-                        Next.js (v12) using
-                        SSR/SSG/CSR, building a standalone, headless frontend with REST APIs.</li>
-                    <li>Improved SEO and security <b>(Schema, Meta tags, HSTS, CSP)</b>, increasing Core Web Vitals from
-                        <b>~21%
-                            to 65%+ on Google PageSpeed.</b>
-                    </li>
-                    <li>SEO and performance improvements boosted search visibility and <b>increased website bookings
-                            by
-                            45%+.</b>
-                    </li>
-                    <li>Created, custom and reuseable component such as Popup, Tabs, Accordion, SelectBox, etc.. to reduce the
-                        dependency of external library</li>
-                    <li><b>Integrated payment gateways</b> (JusPay – India, Telr – Dubai) and analytics tools
-                        (WebEngage,
-                        Google Tag Manager, Microsoft Clarity, Google Search Console) to track user behavior and drive product improvements.
-                    </li>
-                    <li>Worked closely with <b> Product and UI/UX teams</b> to define new feature requirements, analyze user behavior using WebEngage, and translate visual designs and user flows into effective frontend solutions.</li>
-                    <li>Coordinated with <b>Backend teams</b> to support API integrations; <b>Marketing teams</b> to improve bookings and retention through targeted campaigns; used Microsoft Clarity to understand user actions and challenges on the eazydiner website and support data-driven business decisions; and worked with <b>SEO teams</b> to optimize organic traffic using Google Search Console. | Project <a href="https://www.eazydiner.com/">Link</a></li>
+                    <li>Led the development of <b>eazydiner.com</b>, built <b>from scratch</b> across web and <b>mobile
+                            (mSite)</b> using React and Next.js-12, with a strong emphasis on SEO, mobile
+                        performance, <b>including Schema implementation, Meta optimization, page-level enhancements</b>,
+                        and <b>UI rendering strategies</b>. </li>
+                    <li> Owned and delivered <b>multiple platforms</b>, including <b>postcardresorts</b> for hotel
+                        bookings and <b>LiveTable</b> for restaurant owners to manage bookings, deals, and operations;
+                        also built and <b>delivered a white-label quick dining booking</b> platform for <b>Axis Bank</b>
+                        and <b>IndusInd Bank</b> across <b>web and mSite</b>
+                        <!-- with API integrations implemented using PHP in a Laravel environment. --> </li>
+                    <li><b>Independently migrated</b> and successfully deployed the frontend of the eazydiner.com from a
+                        monolithic PHP/Laravel/jQuery system to React & Next.js-12 <b>using</b> SSR/SSG/CSR, building
+                        a <b>standalone, headless frontend</b> with REST APIs. <a
+                            href="https://www.eazydiner.com/">Link</a> </li>
+                    <li><b>Implemented</b> SEO and security enhancements <b>(HSTS, CSP, Schema, Meta Tags)</b>, improved
+                        Core Web Vitals from <b>~21% to 65%+</b> on Google PageSpeed.</li>
+                    <li>Post-migration SEO and performance improvements <b>increased search visibility</b> and boosted
+                        website bookings by <b>55%+</b></li></b> </li>
+                    <li><b>Integrated payment gateways</b> (JusPay – India, Telr – Dubai) and <b>analytics tools</b>
+                        (WebEngage, Google Tag Manager, Microsoft Clarity, Google Search Console) to <b>monitor user
+                            behavior</b> and guide product improvements. </li>
+                    <li>Created, <b>custom and reuseable component</b> such as Popup, Tabs, Accordion, SelectBox,
+                        Inputs, etc.. to <b>reduce the dependency</b> of on third-party libraries </li>
+                        <li>Collaborated with <b>Marketing teams</b> to analyze user behavior using WebEngage and Microsoft Clarity; worked with <b>SEO teams</b> to monitor indexing issues, search performance, organic traffic and overall site performance using Google Search Console; partnered with <b>UI/UX</b> teams to translate design flows into production-ready interfaces; and collaborated with <b>Backend teams</b> on API requirements.</li>
+                    <!-- <li>Collaborate with <b>Backend teams</b> on API requirements, worked with <b>Marketing teams</b> to
+                        analyze user behavior and support business decisions using WebEngage and Microsoft Clarity,
+                        aligned with <b>SEO teams</b> on keyword analysis using Google Search Console to guide frontend
+                        features and UI rendering strategies, and worked with <b>UI/UX teams</b> to review design flows
+                        and translate visual designs into production-ready code. </li> -->
+                        <li>Project <a href="https://ksrahul.github.io/project_links/eazydiner.html">Link</a></li>
+                    <!-- <li>Coordinated with <b>Backend teams</b> to support API integrations; <b>Marketing teams</b> to                        improve bookings and retention through targeted campaigns; used Microsoft Clarity to understand                        user actions and challenges on the eazydiner website and support data-driven business decisions;                        and worked with <b>SEO teams</b> to optimize organic traffic using Google Search Console. |                        Project <a href="https://www.eazydiner.com/">Link</a></li> -->
                 </ul>
             </div>
-
             <div class="role">
                 <div class="role-header">
                     <div>
                         <div class="company-name">Ampersand Design · Gurgaon, India</div>
                         <div class="role-title">UI Developer</div>
-                    </div>
-                    <span>Oct 2017 – Sep 2019</span>
+                    </div> <span>Oct 2017 – Sep 2019</span>
                 </div>
                 <ul>
-                    <li>I have worked as a UI developer with a primary responsibility to develop responsive websites. In
-                        this role, I closely collaborated with design teams to interpret visual designs and ensure
-                        effective website interactions for every project.</li>
-                    <li>Worked with multiple clients on various projects to develop responsive brand websites. | Project <a href="https://ksrahul.github.io/project_links/ampersand.html">Link</a></li>
+                    <li>Worked as a UI Developer building responsive, production-ready websites using using frontend
+                        technology and Php/WordPress</li>
+                    <li>Collaborated closely with UI/UX and design teams to translate visual designs into clean,
+                        interactive user interfaces.</li>
+                    <li>Customized and developed WordPress themes using PHP to <b>meet specific client and business
+                            requirements.</b></li>
+                    <li>Worked directly with <b>external clients</b> and at <b>client locations</b> to deliver internal
+                        and customer-facing projects, including brand and marketing websites for <b>Max Life Insurance,
+                            TQIW, LivFin, and TrueMe,</b> ensuring performance and design accuracy. | Project <a
+                            href="https://ksrahul.github.io/project_links/ampersand.html">Link</a> </li>
                 </ul>
             </div>
         </section>
-
         <section>
             <h2>Skills</h2>
-
             <div class="skills-grid">
                 <div class="company-name">Frontend</div>
-                <div>HTML, CSS, SCSS, Bootstrap, JavaScript, JQuery, React, Next.js (v15)</div>
-
-                <div class="company-name">Design</div>
-                <div>Figma, Zeplin</div>
-
+                <div class="nameSill">HTML, CSS, SCSS, Bootstrap, JavaScript, JQuery, React, Next.js-15</div>
+                <div class="company-name">Design Tools</div>
+                <div class="nameSill">Figma, Zeplin</div>
                 <div class="company-name">Analytics</div>
-                <div>WebEngage, Microsoft Clarity, Google Search Console</div>
-
+                <div class="nameSill">WebEngage, Microsoft Clarity, Google Search Console</div>
                 <div class="company-name">Deployment</div>
-                <div>Jenkins, ArgoCD</div>
-
+                <div class="nameSill">Jenkins, ArgoCD</div>
                 <div class="company-name">Version Control</div>
-                <div>Git</div>
+                <div class="nameSill">Git</div>
+                <div class="company-name">CMS</div>
+                <div class="nameSill">WordPress</div>
+                <div class="company-name">Backend (APIs)</div>
+                <div class="nameSill">Php/Laravel (Intermediate)</div>
             </div>
         </section>
-
 
         <section>
             <h2>Education</h2>
-            <div class="edu-grid">
-                <span>Bachelor of Computer Applications ·</span>
-                <span>Subharti University · 2021–2024</span>
-            </div>
-            <div class="edu-grid">
-                <span>12th ·</span>
-                <span>Madurai Kamaraj University · 2015–2016</span>
-            </div>
-            <div class="edu-grid">
-                <span>10th ·</span>
-                <span>Madurai Kamaraj University · 2013–2014</span>
-            </div>
-
+            <div class="edu-grid"> <span>Bachelor of Computer Applications ·</span> <span>Subharti University ·
+                    2021–2024</span> </div>
+            <div class="edu-grid"> <span>12th ·</span> <span>Madurai Kamaraj University · 2015–2016</span> </div>
+            <div class="edu-grid"> <span>10th ·</span> <span>Madurai Kamaraj University · 2013–2014</span> </div>
         </section>
-
 
     </div>
 </body>
